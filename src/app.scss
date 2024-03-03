@@ -1,0 +1,44 @@
+:root {
+  --black: #171321;
+  --dkblue: #0d314b;
+  --plum: #4b0d49;
+  --hotmag: #ff17e4;
+  --magenta: #e310cb;
+  --aqua: #86fbfb;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: Oxygen, sans-serif;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--sans);
+}
+
+body {
+  background: linear-gradient(to bottom, var(--black) 30%, var(--magenta) 270%);
+  
+}
+
+a {
+  color: var(--magenta);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--hotmag);
+  text-decoration: none;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
